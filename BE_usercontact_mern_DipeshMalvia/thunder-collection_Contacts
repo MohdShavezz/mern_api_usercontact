@@ -1,0 +1,129 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Contacts Copy",
+    "dateExported": "2024-01-23T12:04:57.142Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "c8589b1e-db10-455b-8fca-c8a49e06f25e",
+            "colId": "31daa7d4-a214-45d2-8426-0ed2d5de8c32",
+            "containerId": "",
+            "name": "getContacts",
+            "url": "http://localhost:5001/api/contacts",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-23T12:04:54.259Z",
+            "modified": "2024-01-23T12:04:54.259Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoic2h2ZXN6IiwiZW1haWwiOiJzaGFAZ21haWwuY29tIiwiaWQiOiI2NWFmOWU4YjYxOGYwZTZmODhkMzgzZDgifSwiaWF0IjoxNzA2MDEwNjk0LCJleHAiOjE3MDYwMTE1OTR9.DAQUsN1QVxwunOzzooKE3hIhz_vBuOh1RZQOkBaJCZQ"
+            },
+            "tests": []
+        },
+        {
+            "_id": "915c24bb-59fa-45da-b61a-220b024694ee",
+            "colId": "31daa7d4-a214-45d2-8426-0ed2d5de8c32",
+            "containerId": "",
+            "name": "register",
+            "url": "http://localhost:5001/api/users/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-23T12:04:54.260Z",
+            "modified": "2024-01-23T12:04:54.260Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"admin\",\n  \"email\":\"admin@gmail.com\",\n  \"password\":\"Admin\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "18798bf1-37a9-4cb5-a0fb-aa574141d8c0",
+            "colId": "31daa7d4-a214-45d2-8426-0ed2d5de8c32",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:5001/api/users/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-01-23T12:04:54.261Z",
+            "modified": "2024-01-23T12:04:54.261Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"sha@gmail.com\",\n  \"password\":\"Password\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ea790594-c80a-45b4-9f77-491764736646",
+            "colId": "31daa7d4-a214-45d2-8426-0ed2d5de8c32",
+            "containerId": "",
+            "name": "createContact",
+            "url": "http://localhost:5001/api/contacts/",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-01-23T12:04:54.262Z",
+            "modified": "2024-01-23T12:04:54.262Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"contact1\",\n  \"email\":\"con1@gmail.com\",\n  \"phone\":\"1234123433\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoic2h2ZXN6IiwiZW1haWwiOiJzaGFAZ21haWwuY29tIiwiaWQiOiI2NWFmOWU4YjYxOGYwZTZmODhkMzgzZDgifSwiaWF0IjoxNzA2MDEwNjk0LCJleHAiOjE3MDYwMTE1OTR9.DAQUsN1QVxwunOzzooKE3hIhz_vBuOh1RZQOkBaJCZQ"
+            },
+            "tests": []
+        },
+        {
+            "_id": "2c1ecd4b-c19f-4c2c-bcd3-90fd97a0fe8b",
+            "colId": "31daa7d4-a214-45d2-8426-0ed2d5de8c32",
+            "containerId": "",
+            "name": "updateContact",
+            "url": "http://localhost:5001/api/contacts/65afa5ebac33e7425abe7a1b",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-01-23T12:04:54.263Z",
+            "modified": "2024-01-23T12:04:54.263Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"phone\":\"789789789\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoic2h2ZXN6IiwiZW1haWwiOiJzaGFAZ21haWwuY29tIiwiaWQiOiI2NWFmOWU4YjYxOGYwZTZmODhkMzgzZDgifSwiaWF0IjoxNzA2MDEwNDQwLCJleHAiOjE3MDYwMTEzNDB9.JCgPKUkBRDElmR5ee61yRohJVnJuGySzmG4sJSUtU30"
+            },
+            "tests": []
+        },
+        {
+            "_id": "346d92ea-a6e1-4420-b880-8137c3286d13",
+            "colId": "31daa7d4-a214-45d2-8426-0ed2d5de8c32",
+            "containerId": "",
+            "name": "deleteContact",
+            "url": "http://localhost:5001/api/contacts/65afa5ebac33e7425abe7a1b",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-01-23T12:04:54.264Z",
+            "modified": "2024-01-23T12:04:54.264Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoic2h2ZXN6IiwiZW1haWwiOiJzaGFAZ21haWwuY29tIiwiaWQiOiI2NWFmOWU4YjYxOGYwZTZmODhkMzgzZDgifSwiaWF0IjoxNzA2MDEwNDQwLCJleHAiOjE3MDYwMTEzNDB9.JCgPKUkBRDElmR5ee61yRohJVnJuGySzmG4sJSUtU30"
+            },
+            "tests": []
+        }
+    ]
+}
